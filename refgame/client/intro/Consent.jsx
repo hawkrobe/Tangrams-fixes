@@ -8,67 +8,69 @@ export default class Consent extends React.Component {
     return (
       <Centered>
         <div className="consent bp3-ui-text">
-          <h5 className="bp3-heading">INTRODUCTION</h5>
+          <h5 className="bp3-heading">INTRODUCCIÓN</h5>
           <p>
-            Thank you for deciding to participate in this research project.
-            This research is being conducted by Robert Hawkins, a postdoctoral
-            research fellow, Irina Liu and Alicia Chen, research assistants, and Tom Griffiths, a faculty member,
-            all at Princeton University. This study takes approximately 30 minutes to complete, but will
-            vary a bit depending on how long you must wait for other participants to join.
+          Gracias por decidir participar en este proyecto de investigación.
+          Esta investigación la llevan a cabo Robert Hawkins, investigador postdoctoral,
+          Irina Liu y Alicia Chen, asistentes de investigación, y Tom Griffiths, profesor,
+          todos forman parte de la Universidad de Princeton. Este estudio dura aproximadamente 30 minutos, pero
+          variará un poco en función del tiempo que tenga que esperar a que se incorporen otros participantes.
 
-            Your participation in this research is voluntary. You are free to refuse to take part,
-            and you may stop taking part at any time. You are free to discontinue participation
-            in this study at any time with no penalty. Below is a description of the research project, and your
             consent to participate. Read this information carefully. If you
-            agree to participate, click "I agree" to indicate that you have read
-            and understood the information provided on this consent form.
+          Su participación en esta investigación es voluntaria. Puede negarse a participar,
+          y puede dejar de participar en cualquier momento. Puede dejar de participar
+          en este estudio en cualquier momento sin penalización alguna. A continuación encontrará una descripción del proyecto de investigación y su
+          consentimiento para participar. Lea atentamente esta información. Si acepta participar, haga clic en "Acepto" para indicar que ha leído y
+          comprendido la información facilitada en este formulario de consentimiento.
           </p>
 
-          <h5 className="bp3-heading">PROCEDURES</h5>
+          <h5 className="bp3-heading">PROCEDIMIENTO</h5>
           <p>
-            If you agree to take part in the research, you will play a series of communication games
-            with other participants: one of you will describe a picture for the other to choose out of
-            a lineup of other pictures. All of the information we obtain during the research will be
-            kept confidential, and not associated with your name in any way. However, while the study
-            is running it will be associated with your worker id. Once the study is complete we will replace your worker id with a random string.
+          Si acepta participar en la investigación, jugará a una serie de juegos de comunicación
+          con otros participantes: uno de ustedes describirá una imagen para que el otro la elija entre
+          una serie de imágenes. Toda la información que obtengamos durante la investigación será
+          confidencial y no se asociará a su nombre en modo alguno. Sin embargo, sí
+          se asociará a su identificación de participante. Una vez finalizado el estudio, sustituiremos su ID de participante por un código aleatorio.
           </p>
 
-          <h5 className="bp3-heading">Benefits and Risks</h5>
+          <h5 className="bp3-heading">Beneficios y Riesgos</h5>
           <p>
-            <strong>Benefits:</strong> The research team expects to learn about
-            how humans communicate and solve problems together, which we hope
-            will result in one or more academic publications. You will receive
-            payment after completing this session as well as any public benefit
-            that may come these Research Results being shared with the greater
-            scientific community and public.{" "}
+            <strong>Benefits:</strong> El equipo de investigación espera comprender mejor
+            cómo los seres humanos se comunican y resuelven problemas juntos.
+            Los resultados se compratirán en una o más publicaciones académicas. Usted recibirá
+            su pago tras completar esta sesión, así como cualquier beneficio público
+            que pueda derivarse de la divulgación de los resultados entre la
+            comunidad científica y el público en general.{" "}
           </p>
           <p>
-            <strong>Risks: </strong> During your participation, you may
-            experience frustration if you are unable to communicate effectively with your partner or if one of your partners disconnect and terminate the game early. To help reduce such risks, the research team will include comprehension checking steps to ensure that all participants understand the task.
+            <strong>Riesgos: </strong> Durante su participación, puede
+            experimentar frustración si no es capaz de comunicarse eficazmente con su compañero o si uno de sus compañeros se desconecta y termina el juego antes de tiempo.
+            Para ayudar a reducir estos riesgos, el equipo de investigación incluirá pasos de comprobación de la comprensión
+            para asegurarse de que todos los participantes entienden la tarea.
           </p>
 
-          <h5 className="bp3-heading">YOUR AUTHORITY TO PARTICIPATE</h5>
+          <h5 className="bp3-heading">SU CONSENTIMIENTO PARA PARTICIPAR</h5>
           <p>
-            You represent that you have the full right and authority to sign
-            this form, and if you are a minor that you have the consent (as
-            indicated below) of your legal guardian to sign and acknowledge this
-            form. By signing this form, you confirm that you understand the
-            purpose of the project and how it will be conducted and consent to
-            participate on the terms set forth above.
+          Usted declara que tiene pleno derecho y autoridad para firmar
+          este formulario y, si es menor de edad, que cuenta con el consentimiento
+          de su tutor legal para firmar y aceptar este formulario. Al firmar este formulario, confirma que comprende la
+          propósito del proyecto y la forma en que se llevará a cabo y consiente en
+          participar en los términos expuestos anteriormente.
 
-            If you have any questions about this research, do not hesitate to contact Robert
-            Hawkins at hawkrobe@gmail.com. If you have any questions about your rights or treatment
-            as a participant in this research project, please contact the Princeton Office for
-            Research Integrity and Assurance by phone at 609-258-0865 or by email at ria@princeton.edu.
+          Si tiene alguna pregunta sobre esta investigación, no dude en ponerse en contacto con Robert
+          Hawkins a través de hawkrobe@gmail.com. Si tiene alguna pregunta sobre sus derechos o trato
+          como participante en este proyecto de investigación, póngase en contacto con la Oficina de
+          Integridad y Garantía de la Investigación de la Unuiversidad de Princeton por teléfono
+          al 609-258-0865 o por correo electrónico a través de ria@princeton.edu.
           </p>
 
           <p>
-            By consenting to participate, you acknowledge that you are 18 years or older,
-            have read this consent form, agree to its contents, and agree to take part in this research.
-            If you do not wish to consent, close this page and return the task.
+          Al dar su consentimiento para participar, reconoce que es mayor de 18 años,
+          ha leído este formulario de consentimiento, está de acuerdo con su contenido y acepta participar en esta investigación.
+          Si no desea dar su consentimiento, cierre esta página y devuelva la tarea.
           </p>
 
-          <ConsentButton text="I AGREE" />
+          <ConsentButton text="ACEPTO" />
         </div>
       </Centered>
     );

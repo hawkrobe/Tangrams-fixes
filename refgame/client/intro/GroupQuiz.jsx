@@ -55,7 +55,7 @@ export default class GroupQuiz extends React.Component {
     ) {
       AlertToaster.show({
         message:
-          "Sorry, you have one or more mistakes. Please ensure that you answer the questions correctly, or go back to the instructions",
+          "Lo sentimos, tienes uno o más errores. Por favor, asegúrate de responder correctamente a las preguntas o vuelve a las instrucciones.",
       });
     } else {
       this.props.onNext();
@@ -66,7 +66,7 @@ export default class GroupQuiz extends React.Component {
     const { hasPrev, onPrev, game, treatment } = this.props;
     return (
       <Centered>
-        <div className="quiz">
+        <div className="CUESTIONARIO">
           <h1 className={"bp3-heading"}> Quiz </h1>
           <form onSubmit={this.handleSubmit}>
             <div className="bp3-form-group">
@@ -75,28 +75,28 @@ export default class GroupQuiz extends React.Component {
             <div className="bp3-form-group">
               <div className="bp3-form-content">
                 <RadioGroup
-                  label="Select the true statement about the score:"
+                  label="Seleccione la afirmación verdadera sobre la puntuación:"
                   onChange={this.handleRadioChange}
                   selectedValue={this.state.scoreOption}
                   name="scoreOption"
                   required
                 >
                   <Radio
-                    label="I will score points based only on what I do, no matter what my partner does."
+                    label="Sumaré puntos basándome sólo en lo que yo haga, sin importar lo que haga mi compañero."
                     value="single"
                   />
                   <Radio
-                    label="My partner and I work together as a team and therefore we will both get the same score."
+                    label="Mi compañero y yo trabajamos en equipo y, por tanto, ambos obtendremos la misma puntuación."
                     value="all"
                   />
                 </RadioGroup>
               </div>
             </div>
-            
+
             <div className="bp3-form-group">
               <label className="bp3-label" htmlFor="number-of-participants">
-                If you do NOT choose a tangram before the time is up
-                then your score will be:
+              Si NO eliges un tangram antes de que se acabe el tiempo
+              tu puntuación será:
               </label>
               <div className="bp3-form-content">
                 <input
@@ -164,10 +164,10 @@ export default class GroupQuiz extends React.Component {
               onClick={onPrev}
               disabled={!hasPrev}
             >
-              Back to instructions
+              Volver a las instrucciones
             </button>
             <button type="submit" className="bp3-button bp3-intent-primary">
-              Submit
+              Enviar
               <span className="bp3-icon-standard bp3-icon-key-enter bp3-align-right" />
             </button>
           </form>

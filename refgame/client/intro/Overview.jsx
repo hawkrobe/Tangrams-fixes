@@ -9,7 +9,7 @@ export default class Overview extends React.Component {
     return (
       <Centered>
         <div className="instructions">
-          <h1 className={"bp3-heading"}> Game Overview </h1>
+          <h1 className={"bp3-heading"}> Descripción del Juego </h1>
           <p>
             Esta tarea se trata de un juego en equipo en donde verán una serie de imágenes
             como en el siguiente ejemplo:
@@ -59,8 +59,8 @@ export default class Overview extends React.Component {
 
           <p>
             La comunicación y el trabajo en equipo son esenciales, por lo que <strong>ambos
-            recibirán la misma puntuación en cada ronda</strong>.
-            Para cada respuesta acertada, recibirán un {" "} <strong>bono de 3 puntos</strong> así
+            recibirán la misma puntuación en cada ronda </strong>.
+            Para cada respuesta acertada, recibirán un {" "} <strong> bono de 3 puntos </strong> así
             que ¡presenten atención!
           </p>
 
@@ -70,7 +70,7 @@ export default class Overview extends React.Component {
             onClick={onPrev}
             disabled={!hasPrev}
           >
-            Previous
+            Atrás
           </button>
           <button
             type="button"
@@ -78,7 +78,7 @@ export default class Overview extends React.Component {
             onClick={onNext}
             disabled={!hasNext}
           >
-            Next
+            Continuar
             <span className="bp3-icon-standard bp3-icon-double-chevron-right bp3-align-right"/>
           </button>
         </div>

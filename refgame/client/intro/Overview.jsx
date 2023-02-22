@@ -11,8 +11,8 @@ export default class Overview extends React.Component {
         <div className="instructions">
           <h1 className={"bp3-heading"}> Game Overview </h1>
           <p>
-            In this task, you will play a series of communication games with a partner.
-            Both of you will see the same set of four pictures, which will look something like this:
+            Esta tarea se trata de un juego en equipo en donde verán una serie de imágenes
+            como en el siguiente ejemplo:
           </p>
 
           <div className="image">
@@ -20,14 +20,14 @@ export default class Overview extends React.Component {
           </div>
 
           <p>
-            One of you will be randomly assigned the {" "}
-            <strong>Speaker</strong> role and the other will be assigned the {" "}
-            <strong>Listener</strong> role.
+            En el juego hay dos roles que se asignarán al azar.
+            Uno de ustedes será el <strong>DIRECTOR</strong> y el otro será el {" "}
+            <strong>MATCHER</strong>.
           </p>
 
           <p>
-            If you are the Speaker, you will see a black box
-            secretly marking one of these four pictures as the {" "} <strong>target</strong>.
+            El DIRECTOR, verá una caja negra
+            marcando una de las imágenes como el {" "} <strong>target</strong>.
           </p>
 
           <div className="image">
@@ -35,14 +35,14 @@ export default class Overview extends React.Component {
           </div>
 
           <p>
-            The Speaker's job is to send a description of the target through the chatbox
-            so that the Listener is able to pick it out of the set. You can write whatever
-            description you think will best allow your partner to identify the target
-            (this isn't a game of "Taboo" and there is no reason to give cryptic clues!)
-            Please note that the order of the pictures on your screen is scrambled on each
-            round, so descriptions like "the one on the left" or "the third one" will not
-            work. Also, please limit your description to the current target picture: do not
-            discuss previous trials or chat about any other topics!
+            La tarea del DIRECTOR consiste en describir el target lo mejor posible a través del
+            chatbox para que el MATCHER pueda elegirlo correctamente entre las opciones.
+            Pueden escribir cualquier descripción que se crea oportuna y en cualquier idioma(s)
+            como lo harían normalmente en un chat.
+            OJO: Tomen en cuenta que las imágenes están mezcladas y cambian de orden
+            aleatoriamente en cada ronda. Descripciones como "la de la izquierda", "la de abajo", o
+            "el segundo" no funcionarán. Por favor, limiten el chat a la descripción del target de cada
+            ronda. No hagan referencias a otras rondas ni escriban sobre otros temas.
           </p>
 
           <div className="image">
@@ -51,19 +51,17 @@ export default class Overview extends React.Component {
           </div>
 
           <p>
-            After the Speaker sends a message, the Listener will read it and
-            click the picture they believe is the target.  They are also
-            allowed to respond by sending messages back through the chatbox
-            until they are ready to make a selection. After the Listener clicks
-            one of the pictures, both of you will be given feedback: the Speaker will see which picture
-            the Listener clicked, and the Listener will see the true identity of
-            the target.
+            El MATCHER también puede responder a través del chat.
+            En cuanto el MATCHER elija una de las imágenes, ambos recibirán feedback.
+            El DIRECTOR verá qué imagen seleccionó el MATCHER y el MATCHER verá el target
+            correcto.
           </p>
 
           <p>
-            This is a collaborative game, so <strong>both of you will receive the same score for a given round</strong>.
-            You will earn a {" "} <strong>3 cent bonus</strong> for each correct
-            match, so pay attention!
+            La comunicación y el trabajo en equipo son esenciales, por lo que <strong>ambos
+            recibirán la misma puntuación en cada ronda</strong>.
+            Para cada respuesta acertada, recibirán un {" "} <strong>bono de 3 puntos</strong> así
+            que ¡presenten atención!
           </p>
 
           <button

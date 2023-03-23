@@ -4,7 +4,7 @@ import Author from "./Author";
 export default class ChatLog extends React.Component {
   state = { comment: "" };
 
-  
+
   handleChange = e => {
     const el = e.currentTarget;
     this.setState({ [el.name]: el.value });
@@ -40,7 +40,7 @@ export default class ChatLog extends React.Component {
               name="comment"
               type="text"
               className="bp3-input bp3-fill"
-              placeholder="Enter chat message"
+              placeholder="Escribe aquí"
               value={comment}
               onChange={this.handleChange}
               autoComplete="off"
@@ -60,7 +60,7 @@ class Messages extends React.Component {
   componentDidMount() {
     this.messagesEl.scrollTop = this.messagesEl.scrollHeight;
   }
-  
+
   componentDidUpdate(prevProps) {
     if (prevProps.messages.length < this.props.messages.length) {
       this.messagesEl.scrollTop = this.messagesEl.scrollHeight;
@@ -73,7 +73,7 @@ class Messages extends React.Component {
     return (
       <div className="messages" ref={el => (this.messagesEl = el)}>
         {messages.length === 0 ? (
-          <div className="empty">No messages yet...</div>
+          <div className="empty">Aún no hay mensajes,,,</div>
         ) : null}
         {messages.map((message, i) => (
           <Message

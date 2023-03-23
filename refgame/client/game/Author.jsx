@@ -8,7 +8,7 @@ export default class Author extends React.Component {
       <div className="author">
         <img src={player.get("avatar")} />
         <span className="name" style={{ color: player.get("nameColor") }}>
-          {self ? "You" : player.get("name")}
+          {self ? "Tú" : player.get("name")}
         </span>
       </div>
     );

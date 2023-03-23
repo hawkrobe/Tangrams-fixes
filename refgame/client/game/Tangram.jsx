@@ -4,22 +4,22 @@ export default class Tangram extends React.Component {
   handleClick = e => {
     const { game, tangram, tangram_num, stage, player, round } = this.props;
     const speakerMsgs = _.filter(round.get("chat"), msg => {
-      return msg.role == 'speaker' & msg.playerId == player.get('partner')
+      return msg.role == 'director' & msg.playerId == player.get('partner')
     })
     const partner = _.find(game.players, p => p._id === player.get('partner'));
-    
+
     // only register click for listener and only after the speaker has sent a message
     if (stage.name == 'selection' &
         speakerMsgs.length > 0 &
         player.get('clicked') === false &
-        player.get('role') == 'listener') {
+        player.get('role') == 'matcher') {
       partner.set("clicked", tangram)
       player.set("clicked", tangram)
       Meteor.setTimeout(() => player.stage.submit(), 3000);
       Meteor.setTimeout(() => partner.stage.submit(), 3000);
     }
   };
-  
+
   render() {
     const { tangram, tangram_num, round, stage, player, game, target, ...rest } = this.props;
     const room = player.get('roomId')
@@ -39,14 +39,14 @@ export default class Tangram extends React.Component {
     // Highlight target object for speaker at selection stage
     // Show it to both players at feedback stage if 'showNegativeFeedback' enabled.
     if(tangram == target) {
-      if(player.get('role') == 'speaker' ||
+      if(player.get('role') == 'director' ||
          (game.get('showNegativeFeedback') && player.get('clicked') != '')) {
         _.extend(mystyle, {
           "outline" : "10px solid #000",
           "zIndex" : "9"
         })
       }
-      if(player.get('role') == 'speaker' &&
+      if(player.get('role') == 'director' &&
          !game.get('showNegativeFeedback') &&
          player.get('clicked') != '') {
         _.extend(mystyle, {
@@ -61,7 +61,7 @@ export default class Tangram extends React.Component {
     if(tangram == player.get('clicked')) {
       const color = (
         tangram == target ? '10px solid green' : (
-          player.get('role') == 'listener' || game.get('showNegativeFeedback')
+          player.get('role') == 'matcher' || game.get('showNegativeFeedback')
         ) ? '10px solid red' : 'none'
       );
       _.extend(mystyle, {
@@ -69,7 +69,7 @@ export default class Tangram extends React.Component {
         "zIndex" : "9"
       })
     }
-    
+
     return (
       <div
         onClick={this.handleClick}

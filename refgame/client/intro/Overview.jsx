@@ -39,9 +39,9 @@ export default class Overview extends React.Component {
             chatbox para que el MATCHER pueda elegirlo correctamente entre las opciones.
             Pueden escribir cualquier descripción que se crea oportuna y en cualquier idioma(s)
             como lo harían normalmente en un chat.
-            OJO: Tomen en cuenta que las imágenes están mezcladas y cambian de orden
-            aleatoriamente en cada ronda. Descripciones como "la de la izquierda", "la de abajo", o
-            "el segundo" no funcionarán. Por favor, limiten el chat a la descripción del target de cada
+            OJO: Descripciones como “la de la izquierda”, la de abajo” o “el segundo” no funcionan
+            porque las imágenes están mezcladas y tendrán un orden distinto para cada jugador.
+            Por favor, limiten el chat a la descripción del target de cada
             ronda. No hagan referencias a otras rondas ni escriban sobre otros temas.
           </p>
 
@@ -59,9 +59,9 @@ export default class Overview extends React.Component {
 
           <p>
             La comunicación y el trabajo en equipo son esenciales, por lo que <strong>ambos
-            recibirán la misma puntuación en cada ronda </strong>.
-            Para cada respuesta acertada, recibirán un {" "} <strong> bono de 3 puntos </strong> así
-            que ¡presenten atención!
+            recibirán la misma puntuación en cada ronda</strong>.
+            Para cada respuesta acertada, recibirán <strong>.03 puntos</strong> así
+            que ¡presten atención!
           </p>
 
           <button

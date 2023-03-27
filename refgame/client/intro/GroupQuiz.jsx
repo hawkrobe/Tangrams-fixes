@@ -95,7 +95,7 @@ export default class GroupQuiz extends React.Component {
 
             <div className="bp3-form-group">
               <label className="bp3-label" htmlFor="number-of-participants">
-              Si NO eliges un tangram antes de que se acabe el tiempo
+              Si NO eliges una imagen antes de que se acabe el tiempo
               tu puntuación será:
               </label>
               <div className="bp3-form-content">

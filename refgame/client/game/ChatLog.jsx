@@ -73,7 +73,7 @@ class Messages extends React.Component {
     return (
       <div className="messages" ref={el => (this.messagesEl = el)}>
         {messages.length === 0 ? (
-          <div className="empty">Aún no hay mensajes,,,</div>
+          <div className="empty">Aún no hay mensajes...</div>
         ) : null}
         {messages.map((message, i) => (
           <Message

@@ -25,8 +25,8 @@ export default class Lobby extends React.Component {
           <div className="game-lobby">
             <NonIdealState
               icon={IconNames.PLAY}
-              title="Game loading..."
-              description="Your game will be starting shortly, get ready!"
+              title="Cargando el juego..."
+              description="¡Prepárate, el juego está por comenzar!"
             />
           </div>
         </div>
@@ -34,7 +34,7 @@ export default class Lobby extends React.Component {
     } else if (this.state.earlyExit) {
       // player.set('exited', true)
       player.online = false
-      player.exit("Thanks for waiting, and sorry that there weren't enough other players for your game to begin in a timely fashion!")
+      player.exit("Gracias por esperar, y siento que no hubiera suficientes jugadores para que tu partida empezara a tiempo.")
     } else {
       return (
        <div className="core">
@@ -44,12 +44,11 @@ export default class Lobby extends React.Component {
             title="Lobby"
             description={
               <>
-                <p>Please wait for the game to be ready...</p>
+                <p>El juego está casi listo...</p>
                 <p>
-                  {exisiting} / {total} players ready.
+                  {exisiting} / {total} jugadores listos.
                 </p>
-                  <p> If it takes longer than {(this.state.remainingTime / 1000/ 60).toFixed(0)} minutes to have enough players, you will have the option to leave with compensation. </p>
-                  <p> You've been waiting {(timeElapsed / 1000 / 60).toFixed(2)} minutes.</p>
+                  <p> Llevas esperando {(timeElapsed / 1000 / 60).toFixed(2)} minutos.</p>
               </>
             }
           />
@@ -57,14 +56,13 @@ export default class Lobby extends React.Component {
         <Alert
           intent={Intent.PRIMARY}
           isOpen={showExtensionAlert}
-          confirmButtonText="Wait Longer"
-          cancelButtonText="Exit Now"
+          confirmButtonText="Esperar un poco más"
+          cancelButtonText="Abandonar el juego"
           onConfirm={() => {this.state.remainingTime += (1000 * 60 * 5)}}
           onCancel={() => {this.state.earlyExit = true}}
         >
           <p>
-            Sorry you have been waiting for a while. Do you wish to wait longer
-            or exit now?
+            Sentimos la espera.
           </p>
         </Alert>
       </div>

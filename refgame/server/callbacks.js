@@ -90,7 +90,7 @@ Empirica.onRoundEnd((game, round) => {
 // onRoundEnd is triggered when the game ends.
 // It receives the same options as onGameStart.
 Empirica.onGameEnd((game) => {
-  console.debug("The game", game._id, "has ended");
+  console.debug("El juego", game._id, "ha terminado");
 });
 
 // ===========================================================================

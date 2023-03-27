@@ -46,7 +46,7 @@ export default class ChatLog extends React.Component {
               autoComplete="off"
             />
             <button type="submit" className="bp3-button bp3-intent-primary">
-              Send
+              Enviar
             </button>
           </div>
         </form>

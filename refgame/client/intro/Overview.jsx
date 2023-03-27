@@ -39,7 +39,7 @@ export default class Overview extends React.Component {
             chatbox para que el MATCHER pueda elegirlo correctamente entre las opciones.
             Pueden escribir cualquier descripción que se crea oportuna y en cualquier idioma(s)
             como lo harían normalmente en un chat.
-            OJO: Descripciones como “la de la izquierda”, la de abajo” o “el segundo” no funcionan
+            OJO: Descripciones como “la de la izquierda”, "la de abajo” o “el segundo” no funcionan
             porque las imágenes están mezcladas y tendrán un orden distinto para cada jugador.
             Por favor, limiten el chat a la descripción del target de cada
             ronda. No hagan referencias a otras rondas ni escriban sobre otros temas.
@@ -52,8 +52,9 @@ export default class Overview extends React.Component {
 
           <p>
             El MATCHER también puede responder a través del chat.
+            Tendrán 45 segundos por ronda para comunicarse y elegir una respuesta.
             En cuanto el MATCHER elija una de las imágenes, ambos recibirán feedback.
-            El DIRECTOR verá qué imagen seleccionó el MATCHER y el MATCHER verá el target
+            El DIRECTOR verá qué imagen seleccionó el MATCHER, y el MATCHER verá el target
             correcto.
           </p>
 

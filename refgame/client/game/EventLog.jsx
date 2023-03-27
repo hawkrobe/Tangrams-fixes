@@ -58,10 +58,8 @@ class Event extends React.Component {
         <>
           <div className="content">
             {player.get('role') == 'speaker' ?
-             'Por favor, describe el objeto de la caja negra para que tu compañero pueda \
-              elegirlo correctamente.' :
-             'Haz clic en el objeto que describe tu compañero. Siéntete libre de responder \
-              o hacer preguntas si es necesario.'}
+             'Tienen 45 segundos por ronda para hacer preguntas, resolver dudas y elegir una respuesta.' :
+             'Tienen 45 segundos por ronda para hacer preguntas, resolver dudas y elegir una respuesta.'}
           </div>
           <br/>
           <br/>

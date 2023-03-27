@@ -31,12 +31,8 @@ export default class Consent extends React.Component {
     return (
       <div className="consent">
         <h1 className="bp3-heading" style={{ textAlign: "center", color: "red" }}>
-          DO NOT USE FIREFOX!!
+          POE FAVOR, NO USES FIREFOX.
         </h1>
-        <p style={{ textAlign: "center" }}>
-          Please, don't use firefox! It breaks our game and ruins the experience
-          for your potential teammates!
-        </p>
       </div>
     );
   };

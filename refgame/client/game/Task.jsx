@@ -40,8 +40,8 @@ export default class Task extends React.Component {
     }
     let feedback = (
       player.get('clicked') == '' ? '' :
-        correct ? "Correct! You earned 3 points!" :
-      "Ooops, that wasn't the target! You earned no bonus this round."
+        correct ? "¡Bien! Eligiste la respuesta correcta. Ganaron .03 puntos.":
+      "¡Vaya! Eligiste la respuesta incorrecta. Ganaron .00 puntos."
     )
     return (
       <div className="task">

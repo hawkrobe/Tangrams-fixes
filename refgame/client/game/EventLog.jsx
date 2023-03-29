@@ -58,10 +58,8 @@ class Event extends React.Component {
         <>
           <div className="content">
             {player.get('role') == 'speaker' ?
-             'Please describe the object in the black box so your partner can \
-              correctly pick it out.' :
-             'Click the object your partner is describing! Feel free to respond \
-              or ask questions if necessary.'}
+             'Tienen 45 segundos por ronda para hacer preguntas, resolver dudas y elegir una respuesta.' :
+             'Tienen 45 segundos por ronda para hacer preguntas, resolver dudas y elegir una respuesta.'}
           </div>
           <br/>
           <br/>
@@ -71,7 +69,7 @@ class Event extends React.Component {
 
       case "feedbackStarted":
         content = (
-          <div className="content">This is the feedback!
+          <div className="content">Este es el feedback.
           </div>
         );
         break;

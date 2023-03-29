@@ -14,7 +14,7 @@ function addToSchedule(schedule, first, second, info) {
 
 function addToRoles(roles, player, role, info) {
   // swap roles every repetition
-  var otherRole = role == 'speaker' ? 'listener' : 'speaker';
+  var otherRole = role == 'director' ? 'matcher' : 'director';
   var roleBlock = _.times(info.numTrialsPerBlock, _.constant(role));
   var otherRoleBlock = _.times(info.numTrialsPerBlock, _.constant(otherRole))  ;
   var newValue1 = _.fromPairs([[
@@ -48,8 +48,8 @@ function createSchedule(players, info) {
     _.forEach(_.range(mid), function(player) {
       addToSchedule(schedule, l1[player], l2[player], info);
       addToSchedule(schedule, l2[player], l1[player], info);
-      addToRoles(roles, l1[player], 'speaker', info);
-      addToRoles(roles, l2[player], 'listener', info);
+      addToRoles(roles, l1[player], 'director', info);
+      addToRoles(roles, l2[player], 'matcher', info);
     });
     // rotate around fixed point
     l.splice(1, 0, l.pop());
@@ -125,4 +125,3 @@ Empirica.gameInit((game, treatment) => {
     });
   });
 });
-

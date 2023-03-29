@@ -11,23 +11,19 @@ export default class Thanks extends React.Component {
     return (
         <div>
           {" "}
-          <h1> Experiment Completed </h1>
+          <h1> Experimento Completado </h1>
           <br />
-          <h3>
-            Please submit the following code to receive your bonus:{" "}
-            <em>3B021164</em>.
-          </h3>
           <p>
-            Your final{" "}
+            Tu puntuación{" "}
             <strong>
-              <em>performance bonus is ${player.get("bonus").toFixed(2) || 0}.</em>
+              <em>{player.get("bonus").toFixed(2) || 0}.</em>
             </strong>{" "}
           </p>
           <p>
-            Thank you again for participating! If you were curious, you were always interacting in real time with real human partners.
-            However, there were only four real human partners in each community.
-            The aim of our study was to understand how new language spreads through a community, like slang and dialects do in the real world. Please email us at robertdh@princeton.edu if you have any questions or concerns.
-
+            Gracias por tu participación. El objetivo de este experimento es
+            entender cómo se establecen las convenciones lingüísticas dentro de
+            una comunidad bilingüe como ocurre con la jerga y los dialectos en el
+            mundo real.
           </p>
         </div>
     );

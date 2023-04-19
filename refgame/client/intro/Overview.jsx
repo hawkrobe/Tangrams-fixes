@@ -52,7 +52,7 @@ export default class Overview extends React.Component {
 
           <p>
             El MATCHER también puede responder a través del chat.
-            Tendrán 45 segundos por ronda para comunicarse y elegir una respuesta.
+            Tendrán 60 segundos por ronda para comunicarse y elegir una respuesta.
             En cuanto el MATCHER elija una de las imágenes, ambos recibirán feedback.
             El DIRECTOR verá qué imagen seleccionó el MATCHER, y el MATCHER verá el target
             correcto.

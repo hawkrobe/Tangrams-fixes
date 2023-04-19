@@ -18,7 +18,6 @@ import IndividualQuiz from "./intro/IndividualQuiz.jsx";
 import Round from "./game/Round.jsx";
 import Thanks from "./exit/Thanks.jsx";
 import Sorry from "./exit/Sorry";
-import ExitSurvey from "./exit/ExitSurvey";
 import customBreadcrumb from "./game/Breadcrumb.jsx";
 
 // Set the Consent Component you want to present players (optional).
@@ -59,8 +58,9 @@ Empirica.round(Round);
 Empirica.exitSteps((game, player) => {
   if (player.exitStatus !== "finished") {
     return [Sorry];
+  } else {
+    return [Thanks];
   }
-  return [ExitSurvey, Thanks];
 });
 
 // Empirica.breadcrumb would probably go here
